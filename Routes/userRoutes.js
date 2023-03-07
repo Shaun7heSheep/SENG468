@@ -26,4 +26,13 @@ router.post("/users/:userID/set-buy-trigger", userController.setBuyTrigger);
 // Route for cancelling the SET_BUY commands
 router.post("/users/:userID/cancel-set-buy", userController.cancelSetBuy);
 
+// Route for setting the sell amount
+router.post("/users/:userID/set-sell-amount", userController.setSellAmount)
+
+// Route for setting the sell trigger
+router.post("/users/:userID/set-sell-trigger", userController.setSellTrigger)
+
+// Route for cancelling the SET_SELL commands
+router.post("/users/:userID/cancel-set-sell", userController.cancelSetSell) 
+
 module.exports = router;
